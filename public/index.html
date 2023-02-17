@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    
+    <title>Document</title>
+</head>
+<body class="text-gray-600 bg-gray-100 ">       
+    <div class="grid :grid-cols-3 "><!-- content wrapper-->
+        <div class="md:col-span-1 flex md:justify-start ">
+            <nav class="text-right">
+                <div class="flex justify-between">
+                    <h1 class="font-bold uppercase p-4 border-b border-red-100 ">
+                        <a href="#" class="text-red-400 hover:text-red-600 ">Pastrie House</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6 py-4"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-red-500">
+                            <span>Home</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                            <span>About</span>
+                            <svg class="w-5 ml-2"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 11-1.061-1.061 3 3 0 112.871 5.026v.345a.75.75 0 01-1.5 0v-.5c0-.72.57-1.172 1.081-1.287A1.5 1.5 0 108.94 6.94zM10 15a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                            <span>Contact</span>
+                            <svg class="w-5 ml-2"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+                                <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- nav bar ends-->
+        <main class="px-16 py-6">
+            <div class="text-red-500 flex justify-center md:justify-end ">
+                <a href="#" class="btn border-primary md:border-2 hover:bg-red-300 hover:text-white transition ease-out duration-500">Log In</a>
+                <a class="ml-2 btn border-primary md:border-2 hover:bg-red-300 hover:text-white transition ease-linear duration-500" href="#">Sign Up</a>
+            </div>
+            <header>
+                <h2 class="text-gray-700 text-6xl font-semibold">Pastries</h2>
+                
+            </header>
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-red-200">Latest Pastries</h4>
+                <div class="mt-8 grid lg:grid-cols-3 gap-10 "> <!--Cards goes here--> 
+                    <div class="card hover:shadow-lg">
+                        <img  src="./img/strawberry-oreo.webp" alt="strawberry-oreo jarcake">
+                        <div class="m-4">
+                            <span class="font-bold">Strawberry-Oreo Jar </span>
+                            <span class="block text-gray-500 text-sm"> Discription about Pastrie</span>
+                        </div>
+                        <div class="badge">
+                            <span>Best Selling</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-lg">
+                        <img  src="./img/jar cakes.webp" alt="sprinkler jar cake">
+                        <div class="m-4">
+                            <span class="font-bold">Cream Jar</span>
+                            <span class="block text-gray-500 text-sm"> Discription about Pastrie</span>
+                        </div>
+                        <div class="badge">
+                            <span>New</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-lg">
+                        <img  src="./img/IMG_8561.webp" alt="chocolate jar">
+                        <div class="m-4">
+                            <span class="font-bold">Chocolate Jar </span>
+                            <span class="block text-gray-500 text-sm"> Discription about Pastrie</span>
+                        </div>
+                        <div class="badge">
+                            <span>Favourite</span>
+                        </div>
+                    </div>
+
+                </div>  <!--Card template ends here-->
+
+                <h4 class="font-bold mt-12 pb-2 border-b border-red-200">Popular Pastries </h4>
+                <div class="mt-8"><!--card hover:shadow-lg goes here --> 
+
+                </div>
+                <div class="flex justify-center"  >
+
+                    <div class="bg-amber-100 btn hover:shadow-inner transform hover:scale-150 transition ease-in-out duration-500">Load More</div>
+                </div>
+            </div>
+        </main>
+    </div> 
+    <script src="/public/index.js"></script>
+</body>
+</html>
